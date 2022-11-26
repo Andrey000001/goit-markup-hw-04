@@ -5,7 +5,8 @@ h4,
 h5,
 h6,
 p,
-ul{
+ul,
+li {
     margin: 0;
     padding: 0;
 
@@ -46,6 +47,7 @@ ul{
 .info {
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 .info .contact + .contact {
     margin-left: 50px;
@@ -64,11 +66,28 @@ ul{
 
     color: #757575;
 }
+.link_mail {
+    fill: #757575;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+.link_nomer {
+   fill: #757575;
+   width: 10px;
+   height: 16px;
+   margin-right: 10px;
+}
 
+.link_mail:hover,
+.link_nomer:hover {
+    fill: var(--color);
+}
 .choice:hover ,
 .contact:hover {
-    color:  var(--color);
+    color: var(--color);
 }
+
 .list {
     display: flex;
     padding: 0;
@@ -120,22 +139,17 @@ ul{
     text-align: center;
     background-color: #2F303A;
 
-
-
-
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
-
-
-
-    background-image: 
-    rgba(47, 48, 58, 0.4);
-    url(../images/overley/index.jpg);
-    outline: 1px solid tomato;
-
+    background-image:linear-gradient(to right , rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), url(../images/overley/hiro.jpg);
+   
 }
 .big-title {
     /* padding-top: 200px; */
@@ -185,9 +199,11 @@ ul{
 
 /* КАЧЕСТВА */
 .color-quality {
+
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.
 .item_quality {
     width: 270px;
 }
@@ -201,6 +217,36 @@ ul{
     margin-top: 0;
     margin-bottom: 0;
 }
+.item_quality::before {
+    content: '';
+    margin: 0 auto;
+    display: block;
+    height: 120px;
+    width: 270px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: content;
+    background-color: #F5F4FA;
+}
+.icon_antena::before {
+    background-image: url(../images/icon/antenna.svg);
+    background-size: 65.32px 70px;
+}
+.icon_clock::before {
+    background-image: url(../images/icon/clock.svg);
+    background-size: 66.96px 70px;
+}
+.icon_noyt::before {
+    background-image: url(../images/icon/diagram.svg);
+    background-size: 53.69px 70px ;
+}
+.icon_astronaut::before {
+    background-size: 70px 70px ;
+    background-image: url(../images/icon/astronaut.svg);
+}
+
+
+
 .item_quality + .item_quality {
     margin-left: 30px;
 }
@@ -210,7 +256,7 @@ ul{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    margin-top: 0;
+    margin-top: 30px;
     margin-bottom: 10px;
 
     color: #212121;
@@ -261,7 +307,7 @@ ul{
 } */
 .p_h3 {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
 }
 .igor_dem {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -279,6 +325,40 @@ ul{
 
     color: #212121;
 }
+/* SVG 4-------------- */
+.iconn + .iconn{
+    margin-left: 10px;
+}
+.inst_twit_face_lin {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 30px;
+
+}
+.social_network {
+    display: flex;
+    list-style: none;
+}
+.iii {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iii:hover {
+    background-color: var(--color);
+}
+.svg_4 {
+    fill: #AFB1B8;
+    
+} 
+.svg_4:hover {
+    fill: var(--white);
+}
+
+
 .list-3 {
     display: flex;
 }
@@ -292,7 +372,25 @@ ul{
 
     color: #757575;
 }
+/* action -6 SVG!!! */
+.action {
+    list-style: none;
+    display: flex;
+}
+.group {
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+      
+}
 
+.Object {
+    fill: #AFB1B8;
+}
+.Object:hover {
+    fill: var(--color);
+}
 
 /* FOOTER- НИЗ */
 
@@ -333,4 +431,5 @@ ul{
 .contact-1:hover {
     color: var(--color);
 }
+
 
