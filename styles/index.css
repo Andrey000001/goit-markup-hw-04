@@ -376,16 +376,25 @@ li {
 .action {
     list-style: none;
     display: flex;
+    padding-bottom: 94px;
+    padding-left: auto;
+    padding-right: auto;
 }
 .group {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     width: 170px;
     height: 92px;
-      
 }
-
+.svg_6 {
+    padding-top: 94px;
+}
+.group + .group {
+    margin-left: 30px;
+}
 .Object {
+    display: inline-block;
+    
     fill: #AFB1B8;
 }
 .Object:hover {
@@ -431,5 +440,24 @@ li {
 .contact-1:hover {
     color: var(--color);
 }
+.streat_contact-1 {
+    display: inline-block;
+    margin-right: 70px;
+}
+.streat_contact-11 {
+    display: inline-block;
+    align-items: baseline;
+}
+.join {
+    font-family: roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.03em;
 
-
+    color: var(--white);
+    margin-bottom: 20px;
+}
+.svg_4_4 {
+    fill: var(--white);
+}
