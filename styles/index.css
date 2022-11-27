@@ -374,6 +374,9 @@ li {
     color: #757575;
 }
 /* action -6 SVG!!! */
+.svg_6 {
+    padding-top: 94px
+}
 .action {
     list-style: none;
     display: flex;
