@@ -15,6 +15,7 @@ li {
     --white: #FFF;
     --color: #2196F3;
     --family: Roboto;
+    --grey: #757575;
 }
 /* HEADER-ШАПКА !!! */
 
@@ -64,17 +65,17 @@ li {
 
     text-decoration: none;
 
-    color: #757575;
+    color: var(--grey);
 }
 .link_mail {
-    fill: #757575;
-    width: 16px;
+    fill: var(--grey);
+    width: 16px; 
     height: 12px;
     margin-right: 10px;
 }
 .link_nomer {
-   fill: #757575;
-   width: 10px;
+   fill: var(--grey);
+   width: 10px; 
    height: 16px;
    margin-right: 10px;
 }
@@ -129,7 +130,7 @@ li {
     color: #000;
 }
 .studioo {
-    color: #fff;
+    color: var(--white);
 }
 /* КНОПКА И ЗАГОЛОВОК */
 
@@ -167,7 +168,7 @@ li {
     letter-spacing: 0.06em;
 
 
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .button-one {
@@ -269,7 +270,7 @@ li {
     margin-top: 0;
     margin-bottom: 0;
 
-    color: #757575;
+    color: var(--grey);
 }
 
 /*subtitle */
@@ -377,8 +378,7 @@ li {
     list-style: none;
     display: flex;
     padding-bottom: 94px;
-    padding-left: auto;
-    padding-right: auto;
+ 
 }
 .group {
     border: 1px solid #AFB1B8;
@@ -386,20 +386,22 @@ li {
     width: 170px;
     height: 92px;
 }
-.svg_6 {
-    padding-top: 94px;
-}
+
 .group + .group {
     margin-left: 30px;
 }
-.Object {
-    display: inline-block;
+
+.group_group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     fill: #AFB1B8;
 }
-.Object:hover {
+.group_group:hover {
     fill: var(--color);
 }
+
 
 /* FOOTER- НИЗ */
 
@@ -410,7 +412,6 @@ li {
 }
 .web {
     display: inline-block;
-    /* margin-top: 60px; */
     margin-bottom: 20px;
 }
 .streat {
@@ -449,7 +450,7 @@ li {
     align-items: baseline;
 }
 .join {
-    font-family: roboto;
+    font-family: var(--family);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1428;
