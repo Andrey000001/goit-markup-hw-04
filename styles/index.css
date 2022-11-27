@@ -381,8 +381,6 @@ li {
  
 }
 .group {
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
     width: 170px;
     height: 92px;
 }
@@ -395,8 +393,11 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    border: 1px solid #AFB1B8;
     fill: #AFB1B8;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
 }
 .group_group:hover {
     fill: var(--color);
@@ -442,23 +443,22 @@ li {
     color: var(--color);
 }
 .streat_contact-1 {
-    display: inline-block;
     margin-right: 70px;
 }
-.streat_contact-11 {
-    display: inline-block;
-    align-items: baseline;
-}
+
 .join {
     font-family: var(--family);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1428;
     letter-spacing: 0.03em;
-
     color: var(--white);
     margin-bottom: 20px;
 }
 .svg_4_4 {
     fill: var(--white);
+}
+.footre-container {
+    display: flex;
+    align-items: baseline;
 }

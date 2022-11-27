@@ -213,7 +213,10 @@ rgba(0, 0, 0, 0.16);
     letter-spacing: 0.03em;
     color: var(--grey);
 }
-
+.social_network {
+    display: flex;
+    list-style: none;
+}
 /* FOOTER- НИЗ */
 
 .floor {
@@ -253,3 +256,44 @@ rgba(0, 0, 0, 0.16);
 .contact-1 + .contact-1 {
     margin-top: 9px;
 }
+.streat_contact-1 {
+    margin-right: 70px;
+}
+
+.join {
+    font-family: var(--family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.03em;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+.svg_4_4 {
+    fill: var(--white);
+}
+.footre-container {
+    display: flex;
+    align-items: baseline;
+}
+.iii {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iii:hover {
+    background-color: var(--color);
+}
+.svg_4 {
+    fill: #AFB1B8;
+    
+} 
+.svg_4:hover {
+    fill: var(--white);
+}
+
+
+
