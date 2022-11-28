@@ -55,6 +55,7 @@ li {
 }
 
 .contact {
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
     font-family: var(--font-roboto);
@@ -62,7 +63,7 @@ li {
     font-size: 14px;
     line-height: 1.1428;
     letter-spacing: 0.02em;
-
+    align-items: center;
     text-decoration: none;
 
     color: var(--grey);
@@ -70,13 +71,13 @@ li {
 
 
 .link_mail {
-    fill: var(--grey);
+    fill: currentColor;
     width: 16px; 
     height: 12px;
     margin-right: 10px;
 }
 .link_nomer {
-   fill: var(--grey);
+   fill: currentColor;
    width: 10px; 
    height: 16px;
    margin-right: 10px;
@@ -412,8 +413,10 @@ li {
     border-radius: 4px ;
 }
 
-.group_group:hover .object {
-    color: var(--blue);
+.group_group:hover ,
+.group_group:focus   {
+    fill: #2196F3;
+    border-color:#2196F3 ;
 }
 
 

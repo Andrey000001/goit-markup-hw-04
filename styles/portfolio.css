@@ -64,6 +64,8 @@ li{
 }
 
 .contact {
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     font-family: var(--font-roboto);
@@ -84,13 +86,13 @@ li{
     margin-left: 50px;
 }
 .link_mail {
-    fill: var(--grey);
+    fill: currentColor;
     width: 16px; 
     height: 12px;
     margin-right: 10px;
 }
 .link_nomer {
-   fill: var(--grey);
+   fill: currentColor;
    width: 10px; 
    height: 16px;
    margin-right: 10px;
