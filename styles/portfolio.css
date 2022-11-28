@@ -12,9 +12,9 @@ li{
     padding: 0;
 }
 :root {
-    --color:#2196F3;
+    --blue:#2196F3;
     --white: #FFF;
-    --family: Roboto;
+    --font-roboto: Roboto;
     --grey: #757575;
     
 }
@@ -53,7 +53,7 @@ li{
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    font-family: var(--family);
+    font-family: var(--font-roboto);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1428;
@@ -66,7 +66,7 @@ li{
 .contact {
     padding-top: 32px;
     padding-bottom: 32px;
-    font-family: var(--family);
+    font-family: var(--font-roboto);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1428;
@@ -74,7 +74,7 @@ li{
 
     text-decoration: none;
 
-    color: #757575;
+    color: var(--grey);
 }
 .info {
     display: flex;
@@ -98,11 +98,13 @@ li{
 
 .link_mail:hover,
 .link_nomer:hover {
-    fill: var(--color);
+    fill: var(--blue);
 }
 .choice:hover ,
-.contact:hover {
-    color: var(--color);
+.contact:hover ,
+.choice:focus ,
+.contact:focus {
+    color: var(--blue);
 }
 .list,
 .list-1 ,
@@ -117,7 +119,7 @@ li{
     line-height: 1.19;
     letter-spacing: 0.03em;
     
-    color: var(--color);
+    color: var(--blue);
 
     text-decoration: none;
 }
@@ -137,8 +139,9 @@ li{
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.but:hover {
-    background-color: var(--color);
+.but:hover ,
+.but:focus {
+    background-color: var(--blue);
     color: var(--white);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
    
@@ -158,7 +161,7 @@ li{
     padding-bottom: 6px;
     padding-left: 22px;
     padding-right: 22px;
-    font-family: var(--family);
+    font-family: var(--font-roboto);
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
@@ -202,7 +205,7 @@ rgba(0, 0, 0, 0.16);
     padding: 20px 24px;
 }
 .hthree {
-    font-family: var(--family);
+    font-family: var(--font-roboto);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -211,7 +214,7 @@ rgba(0, 0, 0, 0.16);
     color: #212121;
 }
 .text {
-    font-family: var(--family);
+    font-family: var(--font-roboto);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -233,7 +236,7 @@ rgba(0, 0, 0, 0.16);
 
 .streat {
     margin-bottom: 9px;
-    font-family: var(--family);
+    font-family: var(--font-roboto);
     font-style: normal;
     font-size: 14px;
     line-height: 1.714;
@@ -243,7 +246,7 @@ rgba(0, 0, 0, 0.16);
 }
 .contact-1 {
     display: block;
-    font-family: var(--family);
+    font-family: var(--font-roboto);
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
@@ -251,8 +254,9 @@ rgba(0, 0, 0, 0.16);
 
     color: rgba(255, 255, 255, 0.6);
 }
-.contact-1:hover {
-    color: var(--color);
+.contact-1:hover ,
+.contact-1:focus {
+    color: var(--blue);
 }
 
 .web {
@@ -267,7 +271,7 @@ rgba(0, 0, 0, 0.16);
 }
 
 .join {
-    font-family: var(--family);
+    font-family: var(--font-roboto);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1428;
@@ -291,8 +295,9 @@ rgba(0, 0, 0, 0.16);
     align-items: center;
     background-color: #FFFFFF1A;
 }
-.icons:hover {
-    background-color: var(--color);
+.icons:hover ,
+.icons:focus{
+    background-color: var(--blue);
 }
 .svg_4 {
     fill: #AFB1B8;

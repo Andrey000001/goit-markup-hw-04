@@ -13,8 +13,8 @@ li {
 }
 :root {
     --white: #FFF;
-    --color: #2196F3;
-    --family: Roboto;
+    --blue: #2196F3;
+    --font-roboto: Roboto;
     --grey: #757575;
 }
 /* HEADER-ШАПКА !!! */
@@ -35,7 +35,7 @@ li {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    font-family: var(--family);
+    font-family: var(--font-roboto);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1428;
@@ -57,7 +57,7 @@ li {
 .contact {
     padding-top: 32px;
     padding-bottom: 32px;
-    font-family: var(--family);
+    font-family: var(--font-roboto);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1428;
@@ -83,12 +83,15 @@ li {
 }
 
 .link_mail:hover,
-.link_nomer:hover {
-    fill: var(--color);
+.link_nomer:hover
+ {
+    fill: var(--blue);
 }
 .choice:hover ,
-.contact:hover {
-    color: var(--color);
+.contact:hover ,
+.choice:focus ,
+.contact:focus{
+    color: var(--blue);
 }
 
 
@@ -120,7 +123,7 @@ li {
     letter-spacing: 0.03em;
 
 
-    color: var(--color);
+    color: var(--blue);
 
     text-decoration: none;
 }
@@ -164,7 +167,7 @@ li {
     margin-bottom: 30px;
     text-align: center;
 
-    font-family: var(--family);
+    font-family: var(--font-roboto);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -185,8 +188,8 @@ li {
     padding-bottom: 10px;
     text-align: center;
 
-    font-family: var(--family); 
-    background: var(--color);
+    font-family: var(--font-roboto); 
+    background: var(--blue);
     border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
@@ -207,7 +210,7 @@ li {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.
+
 .item_quality {
     width: 270px;
 }
@@ -229,7 +232,7 @@ li {
     width: 270px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: content;
+    background-size: contain;
     background-color: #F5F4FA;
     border-radius: 4px;
 }
@@ -256,7 +259,7 @@ li {
     margin-left: 30px;
 }
 .quality {
-    font-family: var(--family);
+    font-family: var(--font-roboto);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -267,7 +270,7 @@ li {
     color: #212121;
 }
 .text {
-    font-family: var(--family);
+    font-family: var(--font-roboto);
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
@@ -282,7 +285,7 @@ li {
     padding-bottom: 94px;
 }
 .subtitle {
-    font-family: var(--family);
+    font-family: var(--font-roboto);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1666;
@@ -322,7 +325,7 @@ li {
 .fio {
     margin-bottom: 10px;
     text-align: center;
-    font-family: var(--family);
+    font-family: var(--font-roboto);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.1875;
@@ -352,14 +355,16 @@ li {
     justify-content: center;
     align-items: center;
 }
-.icons:hover {
-    background-color: var(--color);
+.icons:hover ,
+.icons:focus {
+    background-color: var(--blue);
 }
 .svg_4 {
     fill: #AFB1B8;
     
 } 
-.icons:hover .svg_4 {
+.icons:hover .svg_4 ,
+.icons:focus .svg_4{
     fill: var(--white);
 }
 
@@ -370,7 +375,7 @@ li {
 
 .it {
     text-align: center;
-    font-family: var(--family);
+    font-family: var(--font-roboto);
     font-size: 16px;
     line-height: 1.1875;
     letter-spacing: 0.03em;
@@ -408,7 +413,7 @@ li {
 }
 
 .group_group:hover .object {
-    color: #2196F3;
+    color: var(--blue);
 }
 
 
@@ -426,7 +431,7 @@ li {
 }
 .streat {
     margin-bottom: 9px;
-    font-family: var(--family);
+    font-family: var(--font-roboto);
     font-style: normal;
     font-size: 14px;
     line-height: 1.714;
@@ -437,7 +442,7 @@ li {
 }
 .contact-1 {
     display: block;
-    font-family: var(--family);
+    font-family: var(--font-roboto);
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
@@ -448,15 +453,16 @@ li {
 .contact-1 + .contact-1 {
     margin-top: 9px;
 }
-.contact-1:hover {
-    color: var(--color);
+.contact-1:hover,
+.contact-1:focus {
+    color: var(--blue);
 }
 .streat_contact-1 {
     margin-right: 70px;
 }
 
 .join {
-    font-family: var(--family);
+    font-family: var(--font-roboto);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1428;
